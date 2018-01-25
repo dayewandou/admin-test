@@ -1,0 +1,157 @@
+#header{
+  width: 100%;
+  height: 86px;
+  background: #ff8c00;
+  .header_logo_content{
+    width: 98%;
+    height: 52px;
+    padding: 0 1%;
+    background: red;
+    .logo{
+      @include wg(136px,32px);
+      padding-bottom: 4px;
+      float: left;
+      line-height: 32px;
+      @include mt(8px);
+      a{
+        @include ds(2);
+        @include wg(100%,100%);
+        background: url("../assets/961170e9b018467c7bdee04249893182fe7d31b9.png") no-repeat -208px 0;
+        img{
+          @include wg(100%,100%);
+        }
+      }
+    }
+    .person_nav{
+      height: 23px;
+      float: left;
+      @include ml(50px);
+      @include mt(13px);
+      li{
+        padding: 2px 4px 4px;
+        height: 20px;
+        list-style: none;
+        //text-shadow: 0 1px 1px RGBA(0,0,0,.2);
+        border-radius: 3px;
+        @include fd(0);
+        border-right: 1px solid #8ad6db;
+        a{
+          text-decoration: none;
+          display: block;
+          width: 100%;
+          height: 100%;
+          @include fs(12px);
+          @include color(#fdfdfd);
+          @include lh(23px);
+        }
+        &:hover{
+          @include bg(#0F6099);
+        }
+      }
+      li:last-child{
+        border-right: none;
+      }
+      .login{
+        a{
+          img{
+            vertical-align: middle;
+          }
+          .down{
+            @include ds(2);
+            @include wg(10px,8px);
+            background: url("../assets/961170e9b018467c7bdee04249893182fe7d31b9.png") no-repeat 0 -224px;
+            @include ml(6px);
+          }
+        }
+      }
+      li:nth-child(2){
+        @include wg(53px,22px);
+        background: url('../assets/yixin-ndft.png') no-repeat 0 -28px;
+        vertical-align: middle;
+        @include ml(5px);
+        .yixin{
+          @include fd(0);
+          @include ds(2);
+          @include wg(32px,22px);
+          padding-left: 21px;
+          @include lh(21px);
+        }
+      }
+      li:nth-child(4){
+        a{
+          @include color(#ffc2c2);
+        }
+      }
+    }
+    .search_mail{
+      width: 238px;
+      height: 28px;
+      float: right;
+      @include mt(8px);
+      @include dingwei(0,auto,auto);
+      color:#222;
+      opacity: 0.5;
+      transition: all 0.5s;
+      .mail{
+        @include wg(178px,20px);
+        border-radius: 28px;
+        padding: 4px 30px;
+        border: none;
+        outline: none;
+      }
+      .search_icon{
+        @include ds(2);
+        @include wg(15px,16px);
+        @include dingwei(1,7px,8px);
+        background:url('../assets/961170e9b018467c7bdee04249893182fe7d31b9.png') no-repeat -96px -256px;
+      }
+      .enter{
+        @include ds(2);
+        @include wg(25px,100%);
+        @include dingwei(1,0,213px);
+        display: none;
+        transition: all 0.5s;
+        .search_enter{
+          @include ds(2);
+          @include wg(12px,9px);
+          @include dingwei(1,11px,1px);
+          background: url("../assets/961170e9b018467c7bdee04249893182fe7d31b9.png") no-repeat -128px -256px;
+        }
+      }
+
+    }
+  }
+  .header_tabs{
+    width: 98%;
+    height: 33px;
+    background: skyblue;
+    padding: 0 1%;
+    .tabs{
+      @include wg(513px,32px);
+      border: 1px solid #fff;
+      border-bottom: none;
+      border-radius:5px 5px 0 0;
+      li{
+        padding: 0 6px;
+        float: left;
+        list-style: none;
+        text-align: center;
+        @include lh(32px);
+        .child_route{
+          float: left;
+          @include ds(2);
+          @include wg(121px,32px);
+          border-right: 1px solid #fff;
+          a{
+            @include ds(2);
+            @include wg(121px,32px);
+            text-decoration: none;
+            @include fs(14px);
+            font-weight: 700;
+            @include color(#fff);
+          }
+        }
+      }
+    }
+  }
+}
